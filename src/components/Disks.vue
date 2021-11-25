@@ -48,7 +48,15 @@ methods:{
 
 <style scoped lang="scss">
 section{
-    flex-grow:1;
     background-color: #1d2d3c;
 }
+       .col-2{
+           margin:20px;
+       }
+.card{
+    background-color:#2e3a46;
+    color:white;
+    padding:20px;
+}
+   
 </style>

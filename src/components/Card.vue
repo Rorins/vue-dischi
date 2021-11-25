@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card text-center h-100">
     <img :src="image" :alt="title" />
     <h3>{{title}}</h3>
     <h4>{{subTitle}}</h4>
@@ -22,5 +22,10 @@ props:{
 </script>
 
 <style scoped lang='scss'>
-
+h3{
+    padding:15px;
+}
+h4, h5{
+    color:gray;
+}   
 </style>
