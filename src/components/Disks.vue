@@ -49,9 +49,10 @@ methods:{
 <style scoped lang="scss">
 section{
     background-color: #1d2d3c;
+    padding:100px 0;
 }
        .col-2{
-           margin:20px;
+           margin-bottom:20px;
        }
 .card{
     background-color:#2e3a46;

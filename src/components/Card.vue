@@ -23,7 +23,7 @@ props:{
 
 <style scoped lang='scss'>
 h3{
-    padding:15px;
+    padding-top:15px;
 }
 h4, h5{
     color:gray;
