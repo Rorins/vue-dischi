@@ -1,7 +1,7 @@
 <template>
   <section>
-      <div class="container">
-          <div class="row">
+      <div class="container-fluid">
+          <div class="row d-flex justify-content-center">
             
               <div v-for="(disk,index) in disks" :key="`disk${index}`" class="col-2">
                   <Card 

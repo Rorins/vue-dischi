@@ -1,6 +1,15 @@
 <template>
   <header>
      <img class="logo" src="../assets/logo.png" alt="">
+
+<label for="disks">Select disk:</label>
+
+<select name="disks" id="disks">
+  <option value="">Rock</option>
+  <option value="">Pop</option>
+  <option value="">Jazz</option>
+  <option value="">Metal</option>
+</select> 
   </header>
 </template>
 
