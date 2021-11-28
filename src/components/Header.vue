@@ -4,11 +4,11 @@
 
 <label for="disks">Select disk:</label>
 
-<select @change="$emit('search',$event.target.value)" name="disks" id="disks">
-  <option :value="rock">Rock</option>
-  <option :value="pop">Pop</option>
-  <option :value="jazz">Jazz</option>
-  <option :value="metal">Metal</option>
+<select v-model="genre" @change="$emit('search',genre)" name="disks" id="disks">
+  <option value="rock">Rock</option>
+  <option value="pop">Pop</option>
+  <option value="jazz">Jazz</option>
+  <option value="metal">Metal</option>
 </select> 
   </header>
 </template>
@@ -16,6 +16,11 @@
 <script>
 export default {
 name:'Header',
+data(){
+  return{
+    genre:'',
+  }
+}
 }
 </script>
 
