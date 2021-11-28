@@ -3,7 +3,7 @@
       <div class="container-fluid">
           <div class="row d-flex justify-content-center">
             
-              <div v-for="(disk,index) in disks" :key="`disk${index}`" class="col-2">
+              <div v-for="(disk,index) in diskList" :key="`disk${index}`" class="col-2">
                   <Card 
                   :image="disk.poster"
                   :title="disk.title"
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import Card from '@/components/Card.vue';
 
 export default {
@@ -27,21 +26,8 @@ name:'Disks',
 components:{
   Card,
 },
-data(){
-    return{
-        disks:[],
-    };
-},
-created(){
-this.getDisks();
-},
-methods:{
-    getDisks(){
-    axios.get('https://flynn.boolean.careers/exercises/api/array/music')
-    .then(result =>{
-        this.disks = result.data.response;
-    })
-    }
+props:{
+    diskList:Array
 }
 }
 </script>
